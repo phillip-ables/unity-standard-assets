@@ -20,6 +20,16 @@ public class LaunchArcRenderer : MonoBehaviour {
         g = Mathf.Abs(Physics2D.gravity.y);
     }
 
+    private void OnValidate()
+    {
+        //check that lr is not null and that the game is playing
+        if(lr != null
+            && Application.isPlaying)
+        {
+            RenderArc();
+        }
+    }
+
     private void Start()
     {
         RenderArc();

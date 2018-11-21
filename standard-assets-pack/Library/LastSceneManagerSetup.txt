@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/fps-mobile-controls.unity
+- path: Assets/Scenes/hungry-games-pie-box.unity
   isLoaded: 1
   isActive: 1

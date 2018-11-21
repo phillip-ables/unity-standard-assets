@@ -34,7 +34,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Vector2 m_moveInput;
 
         //look code
-        private Vector2 m_lookInput;
+        //commented out this and the part in the !mobile device section, only two uses 
+        //private Vector2 m_lookInput;
 
         private Vector3 m_MoveDir = Vector3.zero;
         private CharacterController m_CharacterController;
@@ -225,7 +226,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // set the desired speed to be walking or running
             speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
             m_moveInput = new Vector2(horizontal, vertical);
-            m_lookInput = new Vector2(lookHorizontal, lookVertical);
+            //m_lookInput = new Vector2(lookHorizontal, lookVertical);
             //dont need the next part cus you cant cross look and move faster then one
 
             // normalize input if it exceeds 1 in combined length:
