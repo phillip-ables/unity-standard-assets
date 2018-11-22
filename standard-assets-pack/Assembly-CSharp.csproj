@@ -69,10 +69,13 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\BuildingScript.cs" />
+    <Compile Include="Assets\Scripts\HorseScript.cs" />
     <Compile Include="Assets\Scripts\JoystickLook.cs" />
     <Compile Include="Assets\Scripts\JoystickMove.cs" />
     <Compile Include="Assets\Scripts\LaunchArcRenderer.cs" />
     <Compile Include="Assets\Scripts\MapManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <None Include="Assets\Free Low Poly Desert Pack\Materials\Shaders\Vertex_Color_Unlit.shader" />
     <None Include="Assets\Free Low Poly Desert Pack\Materials\Shaders\Vertex_Color_Basic.shader" />
     <None Include="Assets\BOXOPHOBIC 1\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />

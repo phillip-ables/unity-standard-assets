@@ -6,6 +6,14 @@ namespace UnityStandardAssets.CrossPlatformInput
 {
     public class JoystickLook : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
+
+        //PLEASE
+        //PLEASE
+        //PLEASE
+
+            //dont forget to go into mouselook and turn your screen lock function back on
+            //then it was also called in the fpscontroller once
+
         public enum AxisOption  
         {
             // Options for which axes to use
@@ -16,8 +24,8 @@ namespace UnityStandardAssets.CrossPlatformInput
 
         public int MovementRange = 100;
         public AxisOption axesToUse = AxisOption.Both; 
-        public string horizontalAxisName = "LookHorizontal"; 
-        public string verticalAxisName = "LookVertical"; 
+        public string horizontalAxisName = "LookVertical"; 
+        public string verticalAxisName = "LookHorizontal"; 
 
         Vector3 m_StartPos;
         bool m_UseX; 
@@ -63,11 +71,13 @@ namespace UnityStandardAssets.CrossPlatformInput
             {
                 m_HorizontalVirtualAxis = new CrossPlatformInputManager.VirtualAxis(horizontalAxisName);  
                 CrossPlatformInputManager.RegisterVirtualAxis(m_HorizontalVirtualAxis);
+                Debug.Log("Hor: " + m_HorizontalVirtualAxis);
             }
             if (m_UseY)
             {
                 m_VerticalVirtualAxis = new CrossPlatformInputManager.VirtualAxis(verticalAxisName);
                 CrossPlatformInputManager.RegisterVirtualAxis(m_VerticalVirtualAxis);
+                Debug.Log("Ver: " + m_VerticalVirtualAxis);
             }
         }
 
