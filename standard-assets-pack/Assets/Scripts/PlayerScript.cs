@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour {
     // we need some sort of currency and a display text to display it
     public int money;
+    public GameObject buildingPrefab;
+    public GameObject fencePrefab;
 
 	// Use this for initialization
 	void Start () {

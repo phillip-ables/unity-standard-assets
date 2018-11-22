@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildingScript : MonoBehaviour {
+    public GameObject cactusPrefab;
+
+    private Transform playerTransform;
     private PlayerScript player;
+    private Vector3 wallPos;
+
 
 	// Use this for initialization
 	void Start () {
-        //player = GameObject.FindGameObjectWithTag("Player"); 
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform; 
         player.GetComponent<PlayerScript>();
     }
 	
@@ -23,6 +28,22 @@ public class BuildingScript : MonoBehaviour {
 
     public void BuildBuilding()  // this will eventually take a player type
     {
-        
+
+        player.money -= 20;
+        int randomIndex = Random.Range(0, 3);
+        //there needs to be a corutine that 
+        //plays animation before it builds
+        switch (randomIndex)
+        {
+            case 3:
+                Instantiate(player.buildingPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
+                break;
+            case 2:
+                Instantiate(player.fencePrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
+                break;
+            default:
+                Instantiate(cactusPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
+                break;
+        }
     }
 }
