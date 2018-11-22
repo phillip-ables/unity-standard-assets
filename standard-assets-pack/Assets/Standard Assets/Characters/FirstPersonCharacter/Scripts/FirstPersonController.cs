@@ -60,6 +60,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            Debug.Log("line 145 fps controller script");
         }
 
 
@@ -143,7 +144,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //0
             //r
             //m_MouseLook.UpdateCursorLock();
-            Debug.Log("line 145 fps controller script");
         }
 
 
