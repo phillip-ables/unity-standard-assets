@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BuildingScript : MonoBehaviour {
     public GameObject cactusPrefab;
+    public float distanceToBuild = 2.0f;
 
     private Transform playerTransform;
     private PlayerScript player;
@@ -31,6 +32,8 @@ public class BuildingScript : MonoBehaviour {
 
         player.money -= 20;
         int randomIndex = Random.Range(0, 3);
+        wallPos = playerTransform.position;
+        wallPos.z += distanceToBuild;
         //there needs to be a corutine that 
         //plays animation before it builds
         switch (randomIndex)
