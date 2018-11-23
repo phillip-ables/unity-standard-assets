@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class BuildingScript : MonoBehaviour {
     public GameObject cactusPrefab;
     public float distanceToBuild = 2.0f;
 
+    private bool m_Build;
+    private bool m_Building;
     private Transform playerTransform;
     private PlayerScript player;
     private Vector3 wallPos;
@@ -15,12 +18,36 @@ public class BuildingScript : MonoBehaviour {
 	void Start () {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform; 
         player = GetComponent<PlayerScript>();
+
+        m_Building = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (!m_Build)
+        {
+            m_Build = CrossPlatformInputManager.GetButtonDown("Build");
+        }
+
+
+        /*
+        if (!m_Build)  // so this  should be because you cant double tap and build more or maybe you can idk
+        {
+            //so while building you cant rebuild
+            m_Build = true;  // because its true
+            //this will stay true until after the animation
+            //i feel like this should be a 
+            //coroutine, after
+            
+            //animation
+            //coroutine then build
+            BuildBuilding();
+
+        }
+        */
 	}
+
+ 
 
     public void BuildBuilding()  // this will eventually take a player type
     {
@@ -43,6 +70,10 @@ public class BuildingScript : MonoBehaviour {
                 Instantiate(cactusPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
                 break;
         }
+
+
+        //FINALLY
+        m_Build = false;
 
     }
 
