@@ -2326,7 +2326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbcae6b91f0eac459fae7dc9ab05677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 200
   buildingPrefab: {fileID: 1475557956409310, guid: 687534883c017674b926bf1abd2353fd,
     type: 2}
   fencePrefab: {fileID: 1006061304326138, guid: 1ef0ca9dcacdf464aabc6292a84b3efc,
@@ -5043,6 +5043,7 @@ GameObject:
   - component: {fileID: 1731812188}
   - component: {fileID: 1731812187}
   - component: {fileID: 1731812186}
+  - component: {fileID: 1731812190}
   m_Layer: 5
   m_Name: BuildButton
   m_TagString: Untagged
@@ -5201,6 +5202,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1731812184}
   m_CullTransparentMesh: 0
+--- !u!114 &1731812190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1731812184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9fa03686b1cd8419ee30e655c6a386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cactusPrefab: {fileID: 0}
+  distanceToBuild: 2
+  m_BuildSpeed: 0
+  m_BuildBob:
+    BobDuration: 0
+    BobAmount: 0
+  m_BuildSound: {fileID: 0}
 --- !u!1 &1740353558 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1622075257901836, guid: c5d6a0c978643a04d84d126295a764bb,
