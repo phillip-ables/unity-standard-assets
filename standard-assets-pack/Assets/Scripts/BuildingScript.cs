@@ -11,7 +11,12 @@ public class BuildingScript : MonoBehaviour {
     private GameObject player;
     private Transform playerTransform;
     private PlayerScript playerScript;
+
     private Vector3 wallPos;
+
+    private GameObject house;
+    private GameObject fence;
+    private float money;
 
     //okay so these are an exact replica of all jump vars
     [SerializeField] private float m_BuildSpeed;
@@ -35,6 +40,11 @@ public class BuildingScript : MonoBehaviour {
         playerScript = player.GetComponent<PlayerScript>();
 
         m_Building = false;
+
+        house = playerScript.buildingPrefab;
+        fence = playerScript.fencePrefab;
+
+        money = playerScript.money;
     }
 
     // Update is called once per frame
@@ -165,10 +175,10 @@ public class BuildingScript : MonoBehaviour {
         switch (randomIndex)
         {
             case 2:
-                Instantiate(playerScript.buildingPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
+                Instantiate(house, wallPos, playerTransform.rotation);  //rotation may be backwards
                 break;
             case 1:
-                Instantiate(playerScript.fencePrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
+                Instantiate(fence, wallPos, playerTransform.rotation);  //rotation may be backwards
                 break;
             default:
                 Instantiate(cactusPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
