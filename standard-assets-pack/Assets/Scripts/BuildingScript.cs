@@ -36,7 +36,6 @@ public class BuildingScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
-        playerTransform = player.transform; 
         playerScript = player.GetComponent<PlayerScript>();
 
         m_Building = false;
@@ -162,6 +161,7 @@ public class BuildingScript : MonoBehaviour {
         playerScript.money -= 20;
         int randomIndex = Random.Range(0, 3);  // this may need to be a three
         Debug.Log(randomIndex);
+        playerTransform = player.transform;
 
         wallPos = playerTransform.position;
         wallPos.z += distanceToBuild;
