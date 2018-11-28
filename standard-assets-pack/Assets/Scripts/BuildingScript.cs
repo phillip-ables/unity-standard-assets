@@ -8,8 +8,9 @@ public class BuildingScript : MonoBehaviour {
     public GameObject cactusPrefab;
     public float distanceToBuild = 2.0f;
 
+    private GameObject player;
     private Transform playerTransform;
-    private PlayerScript player;
+    private PlayerScript playerScript;
     private Vector3 wallPos;
 
     //okay so these are an exact replica of all jump vars
@@ -29,15 +30,16 @@ public class BuildingScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("Build script is ready");
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform; 
-        player = GetComponent<PlayerScript>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = player.transform; 
+        playerScript = player.GetComponent<PlayerScript>();
 
         m_Building = false;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (!m_Build)
         {
             m_Build = CrossPlatformInputManager.GetButtonDown("Build");
@@ -46,6 +48,7 @@ public class BuildingScript : MonoBehaviour {
         {
             BuildBuilding();
         }
+    }
 
         /*
          *DIDNT FEEL THE NEED FOR THIS EITHER
@@ -74,8 +77,9 @@ public class BuildingScript : MonoBehaviour {
             BuildBuilding();
 
         }
-        */
     }
+        */
+    
 
     private void PlayBuildingSound()  // and see the audio source is on the main player so.... prob in fps script
     {
@@ -151,7 +155,7 @@ public class BuildingScript : MonoBehaviour {
     public void BuildBuilding()  // this will eventually take a player type
     {
         //player.money -= 20;
-        int randomIndex = Random.Range(0, 3);
+        int randomIndex = Random.Range(0, 2);  // this may need to be a three
         Debug.Log(randomIndex);
 
         wallPos = playerTransform.position;
@@ -160,11 +164,11 @@ public class BuildingScript : MonoBehaviour {
         //plays animation before it builds
         switch (randomIndex)
         {
-            case 3:
-                Instantiate(player.buildingPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
-                break;
             case 2:
-                Instantiate(player.fencePrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
+                Instantiate(playerScript.buildingPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
+                break;
+            case 1:
+                Instantiate(playerScript.fencePrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
                 break;
             default:
                 Instantiate(cactusPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
