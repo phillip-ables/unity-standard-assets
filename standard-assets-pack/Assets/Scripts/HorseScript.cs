@@ -8,8 +8,8 @@ public class HorseScript : MonoBehaviour
     public GameObject rabbit;
     public GameObject dusty;
     public GameObject bunny;
+    public int positionLevel;
 
-    [SerializeField] private int positionLevel;
     private bool isFourLeg;
     private int legs = 4;
 
