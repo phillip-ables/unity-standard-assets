@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorseScript : MonoBehaviour {
+public class HorseScript : MonoBehaviour
+{
     public Transform feet;
     public GameObject rabbit;
     public GameObject dusty;
@@ -10,12 +11,14 @@ public class HorseScript : MonoBehaviour {
 
     [SerializeField] private int positionLevel;
     private bool isFourLeg;
+    private int legs = 4;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         positionLevel = 0;
-	}
-	
+    }
+
     // i dont think we need an update function
     private void GetDustyLegs()
     {
@@ -58,4 +61,5 @@ public class HorseScript : MonoBehaviour {
                 isFourLeg = false;
                 break;
         }
+    }
 }

@@ -70,6 +70,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\BuildingScript.cs" />
+    <Compile Include="Assets\Scripts\FeedScript.cs" />
     <Compile Include="Assets\Scripts\HorseScript.cs" />
     <Compile Include="Assets\Scripts\JoystickLook.cs" />
     <Compile Include="Assets\Scripts\JoystickMove.cs" />
