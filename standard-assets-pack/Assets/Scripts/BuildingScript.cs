@@ -150,9 +150,10 @@ public class BuildingScript : MonoBehaviour {
 
     public void BuildBuilding()  // this will eventually take a player type
     {
-        Debug.Log("m_Build is now true, you ready to build i think, or are you building?");
-        player.money -= 20;
+        //player.money -= 20;
         int randomIndex = Random.Range(0, 3);
+        Debug.Log(randomIndex);
+
         wallPos = playerTransform.position;
         wallPos.z += distanceToBuild;
         //there needs to be a corutine that 
