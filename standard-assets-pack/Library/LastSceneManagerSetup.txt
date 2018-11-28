@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/hungry-games-pie-box.unity
+- path: Assets/Scenes/hunger-games.unity
   isLoaded: 1
   isActive: 1
