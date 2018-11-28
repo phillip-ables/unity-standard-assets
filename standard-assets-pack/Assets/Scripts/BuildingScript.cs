@@ -40,11 +40,6 @@ public class BuildingScript : MonoBehaviour {
         playerScript = player.GetComponent<PlayerScript>();
 
         m_Building = false;
-
-        house = playerScript.buildingPrefab;
-        fence = playerScript.fencePrefab;
-
-        money = playerScript.money;
     }
 
     // Update is called once per frame
@@ -164,8 +159,8 @@ public class BuildingScript : MonoBehaviour {
 
     public void BuildBuilding()  // this will eventually take a player type
     {
-        //player.money -= 20;
-        int randomIndex = Random.Range(0, 2);  // this may need to be a three
+        playerScript.money -= 20;
+        int randomIndex = Random.Range(0, 3);  // this may need to be a three
         Debug.Log(randomIndex);
 
         wallPos = playerTransform.position;
@@ -175,10 +170,10 @@ public class BuildingScript : MonoBehaviour {
         switch (randomIndex)
         {
             case 2:
-                Instantiate(house, wallPos, playerTransform.rotation);  //rotation may be backwards
+                Instantiate(playerScript.buildingPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
                 break;
             case 1:
-                Instantiate(fence, wallPos, playerTransform.rotation);  //rotation may be backwards
+                Instantiate(playerScript.fencePrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
                 break;
             default:
                 Instantiate(cactusPrefab, wallPos, playerTransform.rotation);  //rotation may be backwards
