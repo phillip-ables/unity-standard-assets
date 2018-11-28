@@ -6,28 +6,56 @@ public class HorseScript : MonoBehaviour {
     public Transform feet;
     public GameObject rabbit;
     public GameObject dusty;
+    public GameObject bunny;
 
-    private bool isTwoLeg;
+    [SerializeField] private int positionLevel;
     private bool isFourLeg;
-    private bool isBunnyLeg;
-    private bool isRatLeg;
 
-	// Use this for initialization
-	void Start () {
-        isTwoLeg = true;
+    // Use this for initialization
+    void Start () {
+        positionLevel = 0;
 	}
 	
     // i dont think we need an update function
-    private void getDustyLegs()
+    private void GetDustyLegs()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < legs; i++)
         {
             Instantiate(dusty, feet.GetChild(i).transform.position, transform.rotation);
         }
     }
 
-    public void ChangePosition()
+    private void GetBunnyLegs()
     {
-        // im gonna do a switch here
+        /*
+         * YOU GET THE IDEA
+        for (int i = 0; i < legs+1; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Instantiate(bunny, feet.GetChild(i - 1).transform.position - feet.GetChild(i), transform.rotation);
+            }
+        }
+        */
     }
+
+    public void ChangePosition(int posLvl)
+    {
+        positionLevel++;
+        //dont forget that we have to pass our bool to the feed script to know which animation for which animal we are suppose to be catching
+        switch (posLvl)
+        {
+            case 4:
+                GetDustyLegs();
+                break;
+            case 3:
+                GetBunnyLegs();
+                break;
+            case 2:
+                isFourLeg = true;
+                break;
+            default:
+                isFourLeg = false;
+                break;
+        }
 }
