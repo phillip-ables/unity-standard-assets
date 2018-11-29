@@ -14,6 +14,7 @@ public class FeedScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        //Debug.Log("feed script present");
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
     }
 	
@@ -25,8 +26,9 @@ public class FeedScript : MonoBehaviour {
         }
         else
         {
-            if(playerScript.money > feedCost)
+            if (playerScript.money > feedCost)
             {
+                //Debug.Log("feeding time!");
                 GetAnimal();
             }
         }

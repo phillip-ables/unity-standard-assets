@@ -9,6 +9,7 @@ public class HorseScript : MonoBehaviour
     public GameObject dusty;
     public GameObject bunny;
     public int positionLevel;
+    public float ratHeight = 0.4f;
 
     private bool isFourLeg;
     private int legs = 4;
@@ -17,15 +18,21 @@ public class HorseScript : MonoBehaviour
     void Start()
     {
         positionLevel = 0;
+        //Debug.Log("Yooo Horse is hurr!!");
+        GetDustyLegs();
     }
 
     // i dont think we need an update function
     private void GetDustyLegs()
     {
+        Vector3 dustyRiderPos = transform.position;
+        dustyRiderPos.y += ratHeight;
         for (int i = 0; i < legs; i++)
         {
             Instantiate(dusty, feet.GetChild(i).transform.position, transform.rotation);
         }
+        transform.position = dustyRiderPos;
+        Debug.Log("Bunnies should be instantiated");
     }
 
     private void GetBunnyLegs()
@@ -42,19 +49,19 @@ public class HorseScript : MonoBehaviour
         */
     }
 
-    public void ChangePosition(int posLvl)
+    public void ChangePosition()
     {
         positionLevel++;
         //dont forget that we have to pass our bool to the feed script to know which animation for which animal we are suppose to be catching
-        switch (posLvl)
+        switch (positionLevel)
         {
-            case 4:
+            case 3:
                 GetDustyLegs();
                 break;
-            case 3:
+            case 2:
                 GetBunnyLegs();
                 break;
-            case 2:
+            case 1:
                 isFourLeg = true;
                 break;
             default:

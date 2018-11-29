@@ -606,7 +606,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 126336705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1826687690}
@@ -728,7 +728,7 @@ GameObject:
   m_Layer: 0
   m_Name: back.l
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2206,7 +2206,7 @@ GameObject:
   m_Layer: 0
   m_Name: front.r
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6143,6 +6143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ae3920dae851045a584811e10d4960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horseScript: {fileID: 2047603902}
 --- !u!1 &1296666405
 GameObject:
   m_ObjectHideFlags: 0
@@ -8981,7 +8982,7 @@ GameObject:
   m_Layer: 0
   m_Name: front.l
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9780,6 +9781,16 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114426710014615320, guid: 4e89fe589ea4601458041469ca4d9d38,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120881523194690352, guid: 4e89fe589ea4601458041469ca4d9d38,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e89fe589ea4601458041469ca4d9d38, type: 2}
   m_IsPrefabAsset: 0
@@ -9818,7 +9829,7 @@ GameObject:
   m_Layer: 0
   m_Name: back.r
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10015,6 +10026,7 @@ MonoBehaviour:
   dusty: {fileID: 1892161969666710, guid: 76a5853dec74ff14596e2aa06988c5fe, type: 2}
   bunny: {fileID: 0}
   positionLevel: 0
+  ratHeight: 0.4
 --- !u!4 &2047603903
 Transform:
   m_ObjectHideFlags: 0
