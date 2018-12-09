@@ -185,9 +185,4 @@ public class BuildingScript : MonoBehaviour {
         m_Build = false;
 
     }
-
-    public void PrintTest()
-    {
-        Debug.Log("This button works, just not that script!");
-    }
 }

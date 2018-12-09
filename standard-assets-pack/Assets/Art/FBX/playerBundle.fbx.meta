@@ -1,0 +1,694 @@
+fileFormatVersion: 2
+guid: 2aebdb8756de5f942b04d76646bec2ce
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm.L
+    100002: Arm.L 1
+    100004: Arm.L 2
+    100006: Arm.R
+    100008: Arm.R 1
+    100010: Arm.R 2
+    100012: Armature.001
+    100014: Armature.002
+    100016: Armature.002 1
+    100018: Armature.002_end
+    100020: Armature.003
+    100022: Armature.003_end
+    100024: Armature.004
+    100026: Armature.004_end
+    100028: Armature.005
+    100030: Armature.005_end
+    100032: Armature.006
+    100034: Armature.006_end
+    100036: Armature.007
+    100038: Armature.007_end
+    100040: BackCalf.L
+    100042: BackCalf.R
+    100044: BackFoot.L
+    100046: BackFoot.R
+    100048: BackKnee.L
+    100050: BackKnee.L_end
+    100052: BackKnee.R
+    100054: BackKnee.R_end
+    100056: BackLowerThigh.L
+    100058: BackLowerThigh.R
+    100060: BackThigh.L
+    100062: BackThigh.R
+    100064: BackToe.L
+    100066: BackToe.L_end
+    100068: BackToe.R
+    100070: BackToe.R_end
+    100072: barrel_hinge
+    100074: barrel_hinge_end
+    100076: Base
+    100078: base_bone
+    100080: base_henge_bone
+    100082: Belly
+    100084: Bone
+    100086: Bone 1
+    100088: Bone 2
+    100090: Bone 3
+    100092: Bone.001
+    100094: Bone.001 1
+    100096: Bone.002
+    100098: Bone.002 1
+    100100: Bone.003
+    100102: Bone.003 1
+    100104: Bone.004
+    100106: Bone.004 1
+    100108: Bone.004_end
+    100110: Bone.005
+    100112: Bone.006
+    100114: Bone.007
+    100116: Bone.008
+    100118: Bone.009
+    100120: Bone.010
+    100122: Bone.010_end
+    100124: Bone.011
+    100126: Chest
+    100128: Chest 1
+    100130: Circle
+    100132: Cowboy
+    100134: CS_BackCalf
+    100136: CS_BackThigh
+    100138: CS_Base
+    100140: CS_Body
+    100142: CS_BodySmall
+    100144: CS_Calf
+    100146: CS_Ear
+    100148: CS_Ear.L
+    100150: CS_Ear.R
+    100152: CS_IK
+    100154: CS_Knee
+    100156: CS_Neck
+    100158: CS_NeckMedium
+    100160: CS_NeckSmall
+    100162: CS_Tail.001
+    100164: CS_TailController
+    100166: Ctrl_Ear.L
+    100168: Ctrl_Ear.L_end
+    100170: Ctrl_Ear.R
+    100172: Ctrl_Ear.R_end
+    100174: Ctrl_Tail
+    100176: Ctrl_Tail_end
+    100178: Cylinder
+    100180: Cylinder.001
+    100182: Cylinder.003
+    100184: Ear.L
+    100186: Ear.L 1
+    100188: Ear.L 2
+    100190: Ear.L 3
+    100192: Ear.L.001
+    100194: Ear.L.002
+    100196: Ear.L.002_end
+    100198: Ear.L_end
+    100200: Ear.L_end 1
+    100202: Ear.L_end 2
+    100204: Ear.R
+    100206: Ear.R 1
+    100208: Ear.R 2
+    100210: Ear.R 3
+    100212: Ear.R.001
+    100214: Ear.R.002
+    100216: Ear.R.002_end
+    100218: Ear.R_end
+    100220: Ear.R_end 1
+    100222: Ear.R_end 2
+    100224: Finger.L.2
+    100226: Finger.L.2_end
+    100228: Finger.R.003
+    100230: Finger.R.003_end
+    100232: Foot Roll.L
+    100234: Foot Roll.R.001
+    100236: Foot.L
+    100238: Foot.L 1
+    100240: Foot.L 2
+    100242: Foot.L 3
+    100244: Foot.L_end
+    100246: Foot.L_end 1
+    100248: Foot.L_end 2
+    100250: Foot.R
+    100252: Foot.R 1
+    100254: Foot.R 2
+    100256: Foot.R.001
+    100258: Foot.R_end
+    100260: Foot.R_end 1
+    100262: Foot.R_end 2
+    100264: ForeCalf.L
+    100266: ForeCalf.R
+    100268: ForeFoot.L
+    100270: ForeFoot.R
+    100272: ForeThigh.L
+    100274: ForeThigh.L.001
+    100276: ForeThigh.R
+    100278: ForeThigh.R.001
+    100280: ForeToe.L
+    100282: ForeToe.L_end
+    100284: ForeToe.R
+    100286: ForeToe.R_end
+    100288: FrontKnee.L
+    100290: FrontKnee.L_end
+    100292: FrontKnee.R
+    100294: FrontKnee.R_end
+    100296: gunWheel_Mesh
+    100298: Hand.L
+    100300: Hand.L 1
+    100302: Hand.L 2
+    100304: Hand.L 3
+    100306: Hand.L_end
+    100308: Hand.L_end 1
+    100310: Hand.L_end 2
+    100312: Hand.R
+    100314: Hand.R 1
+    100316: Hand.R 2
+    100318: Hand.R.001
+    100320: Hand.R_end
+    100322: Hand.R_end 1
+    100324: Hand.R_end 2
+    100326: Hat
+    100328: Hat.001
+    100330: Hat_end
+    100332: Head
+    100334: Head 1
+    100336: Head 2
+    100338: Head 3
+    100340: Head 4
+    100342: Hip
+    100344: Hip 1
+    100346: Hip 2
+    100348: Horse_Armature
+    100350: IK_Back.L
+    100352: IK_Back.R
+    100354: IK_Front.L
+    100356: IK_Front.R
+    100358: Leg Control.L
+    100360: Leg Control.R.001
+    100362: Leg ik.L
+    100364: Leg ik.L_end
+    100366: Leg ik.R.001
+    100368: Leg ik.R.001_end
+    100370: Leg Pole Target.L
+    100372: Leg Pole Target.L_end
+    100374: Leg Pole Target.R.001
+    100376: Leg Pole Target.R.001_end
+    100378: Leg.L
+    100380: Leg.L 1
+    100382: Leg.L 2
+    100384: Leg.R
+    100386: Leg.R 1
+    100388: Leg.R 2
+    100390: Lower Arm.L
+    100392: Lower Arm.R.001
+    100394: Lower Leg.L
+    100396: Lower Leg.L_end
+    100398: Lower Leg.R.001
+    100400: Lower Leg.R.001_end
+    100402: Neck
+    100404: Neck 1
+    100406: Neck 2
+    100408: Neck 3
+    100410: NeckBase
+    100412: Pelvis
+    100414: Pelvis.002
+    100416: Pelvis.003
+    100418: Pelvis.004
+    100420: Pelvis.005
+    100422: Pelvis.005_end
+    100424: Player1
+    100426: //RootNode
+    100428: Rabbit_Armature
+    100430: Rabbit_Armature.001
+    100432: Rabbit_Armature.002
+    100434: Rabbit_Mesh
+    100436: Rabbit_Mesh.001
+    100438: RevWheel_Armature
+    100440: Ribcage
+    100442: Rope
+    100444: Rope_Mesh
+    100446: Rope_Mesh.002
+    100448: Spine
+    100450: Spine 1
+    100452: Spine 2
+    100454: StraightRope_Armature
+    100456: swingRope_Amature
+    100458: Thumb.L.1
+    100460: Thumb.L.2
+    100462: Thumb.L.2_end
+    100464: Thumb.R.002
+    100466: Thumb.R.003
+    100468: Thumb.R.003_end
+    100470: Toes Control.L
+    100472: Toes Control.L_end
+    100474: Toes Control.R.001
+    100476: Toes Control.R.001_end
+    100478: Toes.L
+    100480: Toes.L_end
+    100482: Toes.R.001
+    100484: Toes.R.001_end
+    100486: Torso
+    100488: Underbelly
+    100490: Upper Arm.L
+    100492: Upper Arm.R.001
+    100494: Upper Leg.L
+    100496: Upper Leg.R.001
+    100498: upper_bone
+    100500: upper_bone_end
+    100502: upper_henge_bone
+    100504: UpperChest
+    100506: UpperNeck
+    400000: Arm.L
+    400002: Arm.L 1
+    400004: Arm.L 2
+    400006: Arm.R
+    400008: Arm.R 1
+    400010: Arm.R 2
+    400012: Armature.001
+    400014: Armature.002
+    400016: Armature.002 1
+    400018: Armature.002_end
+    400020: Armature.003
+    400022: Armature.003_end
+    400024: Armature.004
+    400026: Armature.004_end
+    400028: Armature.005
+    400030: Armature.005_end
+    400032: Armature.006
+    400034: Armature.006_end
+    400036: Armature.007
+    400038: Armature.007_end
+    400040: BackCalf.L
+    400042: BackCalf.R
+    400044: BackFoot.L
+    400046: BackFoot.R
+    400048: BackKnee.L
+    400050: BackKnee.L_end
+    400052: BackKnee.R
+    400054: BackKnee.R_end
+    400056: BackLowerThigh.L
+    400058: BackLowerThigh.R
+    400060: BackThigh.L
+    400062: BackThigh.R
+    400064: BackToe.L
+    400066: BackToe.L_end
+    400068: BackToe.R
+    400070: BackToe.R_end
+    400072: barrel_hinge
+    400074: barrel_hinge_end
+    400076: Base
+    400078: base_bone
+    400080: base_henge_bone
+    400082: Belly
+    400084: Bone
+    400086: Bone 1
+    400088: Bone 2
+    400090: Bone 3
+    400092: Bone.001
+    400094: Bone.001 1
+    400096: Bone.002
+    400098: Bone.002 1
+    400100: Bone.003
+    400102: Bone.003 1
+    400104: Bone.004
+    400106: Bone.004 1
+    400108: Bone.004_end
+    400110: Bone.005
+    400112: Bone.006
+    400114: Bone.007
+    400116: Bone.008
+    400118: Bone.009
+    400120: Bone.010
+    400122: Bone.010_end
+    400124: Bone.011
+    400126: Chest
+    400128: Chest 1
+    400130: Circle
+    400132: Cowboy
+    400134: CS_BackCalf
+    400136: CS_BackThigh
+    400138: CS_Base
+    400140: CS_Body
+    400142: CS_BodySmall
+    400144: CS_Calf
+    400146: CS_Ear
+    400148: CS_Ear.L
+    400150: CS_Ear.R
+    400152: CS_IK
+    400154: CS_Knee
+    400156: CS_Neck
+    400158: CS_NeckMedium
+    400160: CS_NeckSmall
+    400162: CS_Tail.001
+    400164: CS_TailController
+    400166: Ctrl_Ear.L
+    400168: Ctrl_Ear.L_end
+    400170: Ctrl_Ear.R
+    400172: Ctrl_Ear.R_end
+    400174: Ctrl_Tail
+    400176: Ctrl_Tail_end
+    400178: Cylinder
+    400180: Cylinder.001
+    400182: Cylinder.003
+    400184: Ear.L
+    400186: Ear.L 1
+    400188: Ear.L 2
+    400190: Ear.L 3
+    400192: Ear.L.001
+    400194: Ear.L.002
+    400196: Ear.L.002_end
+    400198: Ear.L_end
+    400200: Ear.L_end 1
+    400202: Ear.L_end 2
+    400204: Ear.R
+    400206: Ear.R 1
+    400208: Ear.R 2
+    400210: Ear.R 3
+    400212: Ear.R.001
+    400214: Ear.R.002
+    400216: Ear.R.002_end
+    400218: Ear.R_end
+    400220: Ear.R_end 1
+    400222: Ear.R_end 2
+    400224: Finger.L.2
+    400226: Finger.L.2_end
+    400228: Finger.R.003
+    400230: Finger.R.003_end
+    400232: Foot Roll.L
+    400234: Foot Roll.R.001
+    400236: Foot.L
+    400238: Foot.L 1
+    400240: Foot.L 2
+    400242: Foot.L 3
+    400244: Foot.L_end
+    400246: Foot.L_end 1
+    400248: Foot.L_end 2
+    400250: Foot.R
+    400252: Foot.R 1
+    400254: Foot.R 2
+    400256: Foot.R.001
+    400258: Foot.R_end
+    400260: Foot.R_end 1
+    400262: Foot.R_end 2
+    400264: ForeCalf.L
+    400266: ForeCalf.R
+    400268: ForeFoot.L
+    400270: ForeFoot.R
+    400272: ForeThigh.L
+    400274: ForeThigh.L.001
+    400276: ForeThigh.R
+    400278: ForeThigh.R.001
+    400280: ForeToe.L
+    400282: ForeToe.L_end
+    400284: ForeToe.R
+    400286: ForeToe.R_end
+    400288: FrontKnee.L
+    400290: FrontKnee.L_end
+    400292: FrontKnee.R
+    400294: FrontKnee.R_end
+    400296: gunWheel_Mesh
+    400298: Hand.L
+    400300: Hand.L 1
+    400302: Hand.L 2
+    400304: Hand.L 3
+    400306: Hand.L_end
+    400308: Hand.L_end 1
+    400310: Hand.L_end 2
+    400312: Hand.R
+    400314: Hand.R 1
+    400316: Hand.R 2
+    400318: Hand.R.001
+    400320: Hand.R_end
+    400322: Hand.R_end 1
+    400324: Hand.R_end 2
+    400326: Hat
+    400328: Hat.001
+    400330: Hat_end
+    400332: Head
+    400334: Head 1
+    400336: Head 2
+    400338: Head 3
+    400340: Head 4
+    400342: Hip
+    400344: Hip 1
+    400346: Hip 2
+    400348: Horse_Armature
+    400350: IK_Back.L
+    400352: IK_Back.R
+    400354: IK_Front.L
+    400356: IK_Front.R
+    400358: Leg Control.L
+    400360: Leg Control.R.001
+    400362: Leg ik.L
+    400364: Leg ik.L_end
+    400366: Leg ik.R.001
+    400368: Leg ik.R.001_end
+    400370: Leg Pole Target.L
+    400372: Leg Pole Target.L_end
+    400374: Leg Pole Target.R.001
+    400376: Leg Pole Target.R.001_end
+    400378: Leg.L
+    400380: Leg.L 1
+    400382: Leg.L 2
+    400384: Leg.R
+    400386: Leg.R 1
+    400388: Leg.R 2
+    400390: Lower Arm.L
+    400392: Lower Arm.R.001
+    400394: Lower Leg.L
+    400396: Lower Leg.L_end
+    400398: Lower Leg.R.001
+    400400: Lower Leg.R.001_end
+    400402: Neck
+    400404: Neck 1
+    400406: Neck 2
+    400408: Neck 3
+    400410: NeckBase
+    400412: Pelvis
+    400414: Pelvis.002
+    400416: Pelvis.003
+    400418: Pelvis.004
+    400420: Pelvis.005
+    400422: Pelvis.005_end
+    400424: Player1
+    400426: //RootNode
+    400428: Rabbit_Armature
+    400430: Rabbit_Armature.001
+    400432: Rabbit_Armature.002
+    400434: Rabbit_Mesh
+    400436: Rabbit_Mesh.001
+    400438: RevWheel_Armature
+    400440: Ribcage
+    400442: Rope
+    400444: Rope_Mesh
+    400446: Rope_Mesh.002
+    400448: Spine
+    400450: Spine 1
+    400452: Spine 2
+    400454: StraightRope_Armature
+    400456: swingRope_Amature
+    400458: Thumb.L.1
+    400460: Thumb.L.2
+    400462: Thumb.L.2_end
+    400464: Thumb.R.002
+    400466: Thumb.R.003
+    400468: Thumb.R.003_end
+    400470: Toes Control.L
+    400472: Toes Control.L_end
+    400474: Toes Control.R.001
+    400476: Toes Control.R.001_end
+    400478: Toes.L
+    400480: Toes.L_end
+    400482: Toes.R.001
+    400484: Toes.R.001_end
+    400486: Torso
+    400488: Underbelly
+    400490: Upper Arm.L
+    400492: Upper Arm.R.001
+    400494: Upper Leg.L
+    400496: Upper Leg.R.001
+    400498: upper_bone
+    400500: upper_bone_end
+    400502: upper_henge_bone
+    400504: UpperChest
+    400506: UpperNeck
+    2100000: Bunny_Material
+    2100002: Simple_Rope_Texture
+    2100004: No Name
+    2100006: Cowboy_Material
+    2100008: Brown
+    2100010: UnderBelly
+    2100012: Black
+    2100014: HorseShoe
+    2300000: Circle
+    2300002: CS_BackCalf
+    2300004: CS_BackThigh
+    2300006: CS_Base
+    2300008: CS_Body
+    2300010: CS_BodySmall
+    2300012: CS_Calf
+    2300014: CS_Ear
+    2300016: CS_Ear.L
+    2300018: CS_Ear.R
+    2300020: CS_IK
+    2300022: CS_Knee
+    2300024: CS_Neck
+    2300026: CS_NeckMedium
+    2300028: CS_NeckSmall
+    2300030: CS_Tail.001
+    2300032: CS_TailController
+    2300034: Cylinder.001
+    2300036: gunWheel_Mesh
+    3300000: Circle
+    3300002: CS_BackCalf
+    3300004: CS_BackThigh
+    3300006: CS_Base
+    3300008: CS_Body
+    3300010: CS_BodySmall
+    3300012: CS_Calf
+    3300014: CS_Ear
+    3300016: CS_Ear.L
+    3300018: CS_Ear.R
+    3300020: CS_IK
+    3300022: CS_Knee
+    3300024: CS_Neck
+    3300026: CS_NeckMedium
+    3300028: CS_NeckSmall
+    3300030: CS_Tail.001
+    3300032: CS_TailController
+    3300034: Cylinder.001
+    3300036: gunWheel_Mesh
+    4300000: Rabbit_Mesh.001
+    4300002: Rabbit_Mesh
+    4300004: Cylinder.003
+    4300006: Circle
+    4300008: CS_Ear
+    4300010: CS_NeckMedium
+    4300012: CS_NeckSmall
+    4300014: CS_Neck
+    4300016: CS_Tail.001
+    4300018: CS_IK
+    4300020: CS_Base
+    4300022: CS_BodySmall
+    4300024: CS_Body
+    4300026: CS_BackThigh
+    4300028: CS_BackCalf
+    4300030: CS_Calf
+    4300032: CS_Knee
+    4300034: Cylinder.001
+    4300036: Cowboy
+    4300038: Hat.001
+    4300040: Cylinder
+    4300042: Rope_Mesh.002
+    4300044: Rope_Mesh
+    4300046: gunWheel_Mesh
+    4300048: CS_TailController
+    4300050: CS_Ear.R
+    4300052: CS_Ear.L
+    7400000: Rabbit_Armature.002|Rabbit_Armature.001Action
+    7400002: Rabbit_Armature.002|Rabbit_Armature.001Action.001
+    7400004: Rabbit_Armature.001|Rabbit_Armature.001Action
+    7400006: Rabbit_Armature.001|Rabbit_Armature.001Action.001
+    7400008: StraightRope_Armature|Armature.003Action
+    7400010: StraightRope_Armature|Armature.004Action
+    7400012: Horse_Armature|ArmatureAction
+    7400014: Player1|Armature.001Action
+    7400016: Player1|PoseLib
+    7400018: Armature.002|Armature.002Action
+    7400020: Armature.002|Armature.003Action
+    7400022: swingRope_Amature|Armature.003Action
+    7400024: swingRope_Amature|Armature.004Action
+    7400026: swingRope_Amature|swingRope_AmatureAction
+    7400028: Rope|RopeAction
+    7400030: RevWheel_Armature|Armature.003Action
+    9500000: //RootNode
+    13700000: Cowboy
+    13700002: Cylinder
+    13700004: Cylinder.003
+    13700006: Hat.001
+    13700008: Rabbit_Mesh
+    13700010: Rabbit_Mesh.001
+    13700012: Rope_Mesh
+    13700014: Rope_Mesh.002
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
