@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 5e3c233118ddd8049b5ec9e9bf02d005
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Cowboy
+    100004: //RootNode
+    100006: Cowboy_Mesh
+    100008: Finger.L.2
+    100010: Finger.L.2_end
+    100012: Finger.L.2_end_end
+    100014: Finger.R.003
+    100016: Finger.R.003_end
+    100018: Foot Roll.L
+    100020: Foot Roll.R.001
+    100022: Foot.L
+    100024: Foot.R.
+    100026: Hand.L
+    100028: Hand.R.001
+    100030: Hat
+    100032: Hat 1
+    100034: Hat_end
+    100036: Head
+    100038: Leg Control.L
+    100040: Leg Control.R
+    100042: Leg ik.L
+    100044: Leg ik.L_end
+    100046: Leg ik.R
+    100048: Leg ik.R_end
+    100050: Leg Pole Target.L
+    100052: Leg Pole Target.L_end
+    100054: Leg Pole Target.R
+    100056: Leg Pole Target.R_end
+    100058: Lower Arm.L
+    100060: Lower Arm.R.001
+    100062: Lower Leg.L
+    100064: Lower Leg.L_end
+    100066: Lower Leg.R.001
+    100068: Lower Leg.R.001_end
+    100070: Neck
+    100072: Thumb.L.1
+    100074: Thumb.L.2
+    100076: Thumb.L.2_end
+    100078: Thumb.L.2_end_end
+    100080: Thumb.R.002
+    100082: Thumb.R.003
+    100084: Thumb.R.003_end
+    100086: Thumb.R.003_end_end
+    100088: Toes Control.L
+    100090: Toes Control.L_end
+    100092: Toes Control.R
+    100094: Toes Control.R_end
+    100096: Toes.L
+    100098: Toes.L_end
+    100100: Toes.R
+    100102: Toes.R_end
+    100104: Torso
+    100106: Upper Arm.L
+    100108: Upper Arm.R.001
+    100110: Upper Leg.L
+    100112: Upper Leg.R
+    400000: Chest
+    400002: Cowboy
+    400004: //RootNode
+    400006: Cowboy_Mesh
+    400008: Finger.L.2
+    400010: Finger.L.2_end
+    400012: Finger.L.2_end_end
+    400014: Finger.R.003
+    400016: Finger.R.003_end
+    400018: Foot Roll.L
+    400020: Foot Roll.R.001
+    400022: Foot.L
+    400024: Foot.R.
+    400026: Hand.L
+    400028: Hand.R.001
+    400030: Hat
+    400032: Hat 1
+    400034: Hat_end
+    400036: Head
+    400038: Leg Control.L
+    400040: Leg Control.R
+    400042: Leg ik.L
+    400044: Leg ik.L_end
+    400046: Leg ik.R
+    400048: Leg ik.R_end
+    400050: Leg Pole Target.L
+    400052: Leg Pole Target.L_end
+    400054: Leg Pole Target.R
+    400056: Leg Pole Target.R_end
+    400058: Lower Arm.L
+    400060: Lower Arm.R.001
+    400062: Lower Leg.L
+    400064: Lower Leg.L_end
+    400066: Lower Leg.R.001
+    400068: Lower Leg.R.001_end
+    400070: Neck
+    400072: Thumb.L.1
+    400074: Thumb.L.2
+    400076: Thumb.L.2_end
+    400078: Thumb.L.2_end_end
+    400080: Thumb.R.002
+    400082: Thumb.R.003
+    400084: Thumb.R.003_end
+    400086: Thumb.R.003_end_end
+    400088: Toes Control.L
+    400090: Toes Control.L_end
+    400092: Toes Control.R
+    400094: Toes Control.R_end
+    400096: Toes.L
+    400098: Toes.L_end
+    400100: Toes.R
+    400102: Toes.R_end
+    400104: Torso
+    400106: Upper Arm.L
+    400108: Upper Arm.R.001
+    400110: Upper Leg.L
+    400112: Upper Leg.R
+    2100000: Black
+    2100002: Cowboy_Texture
+    4300000: Hat
+    4300002: Cowboy_Mesh
+    7400000: Cowboy|@Player_feat_CatchRabbit
+    7400002: Cowboy|@Player_feat_TieRabbit
+    7400004: Cowboy|@Player_loc_BunnyHop
+    9500000: //RootNode
+    13700000: Cowboy_Mesh
+    13700002: Hat
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
