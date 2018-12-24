@@ -233,7 +233,27 @@ ModelImporter:
     9500000: //RootNode
     13700000: Horse_Mesh
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: dc0e8071bdf2898459c1376fd6f46f1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown
+    second: {fileID: 2100000, guid: 5f47961b2999bac4abdfae7859c80d2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HorseShoe
+    second: {fileID: 2100000, guid: 06bcccfae46c9c640a256e01eeabb23e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UnderBelly
+    second: {fileID: 2100000, guid: a00fb44f95c7fcd418d7a6d588c58d85, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

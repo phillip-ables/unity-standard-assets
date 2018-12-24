@@ -59,7 +59,12 @@ ModelImporter:
     7400010: RabbitF|@RabbitF_loc_BunnyHop
     9500000: //RootNode
     13700000: Rabbit_Mesh.front
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bunny_Material
+    second: {fileID: 2100000, guid: 65505939b335651469da303f27389939, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
