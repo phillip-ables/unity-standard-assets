@@ -34,7 +34,7 @@ public class FeedScript : MonoBehaviour {
             {
                 playerScript.money -= feedCost;
                 horse.SetTrigger("FeedPressed");
-                //playerScript.feed();
+                playerScript.FeedPressed();
                 if(Random.Range(0,2) >= 1)
                 {
                     feedSpeedInt++;
@@ -42,6 +42,7 @@ public class FeedScript : MonoBehaviour {
                 }
                 Debug.Log("level " + feedSpeedInt);
                 horse.SetInteger("FeedSpeedInt", feedSpeedInt);
+                playerScript.SetInteger(feedSpeedInt);
 
             }
             m_Feed = false;
