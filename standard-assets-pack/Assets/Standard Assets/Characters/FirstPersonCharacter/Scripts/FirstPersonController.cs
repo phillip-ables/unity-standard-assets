@@ -26,7 +26,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private float m_StepInterval;
         [SerializeField] private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
-        [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
+        [SerializeField] private AudioClip m_LandSound;
+        // the sound played when character touches back on ground.
+
+        [SerializeField] private Animator player;
+        [SerializeField] private Animator horse;
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -56,11 +60,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_FovKick.Setup(m_Camera);
             m_HeadBob.Setup(m_Camera, m_StepInterval);
             m_StepCycle = 0f;
-            m_NextStep = m_StepCycle/2f;
+            m_NextStep = m_StepCycle / 2f;
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
-			m_MouseLook.Init(transform , m_Camera.transform);
+            m_MouseLook.Init(transform, m_Camera.transform);
             Debug.Log("line 145 fps controller script");
+
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+            horse = GameObject.FindGameObjectWithTag( "Stead" ).GetComponent<Animator>();
         }
 
 
@@ -103,16 +110,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
-            Vector3 desiredMove = transform.forward*m_moveInput.y + transform.right*m_moveInput.x;
+            Vector3 desiredMove = transform.forward * m_moveInput.y + transform.right * m_moveInput.x;
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
             Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
-                               m_CharacterController.height/2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
+                               m_CharacterController.height / 2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
             desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
 
-            m_MoveDir.x = desiredMove.x*speed;
-            m_MoveDir.z = desiredMove.z*speed;
+            m_MoveDir.x = desiredMove.x * speed;
+            m_MoveDir.z = desiredMove.z * speed;
 
 
             if (m_CharacterController.isGrounded)
@@ -129,12 +136,25 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else
             {
-                m_MoveDir += Physics.gravity*m_GravityMultiplier*Time.fixedDeltaTime;
+                m_MoveDir += Physics.gravity * m_GravityMultiplier * Time.fixedDeltaTime;
             }
-            m_CollisionFlags = m_CharacterController.Move(m_MoveDir*Time.fixedDeltaTime);
+            m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
 
             ProgressStepCycle(speed);
             UpdateCameraPosition(speed);
+
+            //this is all my and my code to call the animation for moving
+            if (speed != 0 )
+            {
+                player.SetBool("IsMoving", true);
+                horse.SetBool("IsMoving", true);
+                Debug.Log("Should be changing the bool");
+            }
+            else
+            {
+                player.SetBool("IsMoving", false);
+                horse.SetBool("IsMoving", false);
+            }
 
 
             //c
