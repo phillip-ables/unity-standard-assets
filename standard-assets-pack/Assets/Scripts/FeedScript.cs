@@ -7,7 +7,7 @@ public class FeedScript : MonoBehaviour {
     private bool m_Feed;
     private Animator horse;
     private PlayerScript playerScript;
-    private int feedCost = 20;
+    public int feedCost = 20;
     //decided to make it cost more and make it one shot,
     //so if successful then you got it, if not then you dont
     //private int lastPosLvl;
@@ -19,7 +19,7 @@ public class FeedScript : MonoBehaviour {
         //Debug.Log("feed script present");
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         feedSpeedInt = 0;
-        horse = GameObject.FindGameObjectWithTag("Horse").GetComponent<Animator>();
+        horse = GameObject.FindGameObjectWithTag("Stead").GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -27,7 +27,6 @@ public class FeedScript : MonoBehaviour {
         if (!m_Feed)
         {
             m_Feed = CrossPlatformInputManager.GetButtonDown("Feed");
-            Debug.Log("Button is now ready");
         }
         else
         {
@@ -49,6 +48,7 @@ public class FeedScript : MonoBehaviour {
         }
 	}
 
+    /*
     public void CatchAnimal()
     {
         //call animation for furry animal to mistily appear timidly look then
@@ -80,4 +80,5 @@ public class FeedScript : MonoBehaviour {
 
         m_Feed = false;
     }
+    */
 }

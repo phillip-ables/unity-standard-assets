@@ -148,13 +148,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 //player.SetBool("IsMoving", true);
                 horse.SetBool("IsMoving", true);
-                Debug.Log("Should be changing the bool");
             }
             else
             {
                 //player.SetBool("IsMoving", false);
                 horse.SetBool("IsMoving", false);
-                Debug.Log("Speed is " + speed);
             }
 
 
