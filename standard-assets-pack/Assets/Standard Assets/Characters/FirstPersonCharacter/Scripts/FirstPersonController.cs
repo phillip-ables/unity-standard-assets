@@ -144,16 +144,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
             UpdateCameraPosition(speed);
 
             //this is all my and my code to call the animation for moving
-            if (speed != 0 )
+            if (m_moveInput.x != 0 || m_moveInput.y != 0)
             {
-                player.SetBool("IsMoving", true);
+                //player.SetBool("IsMoving", true);
                 horse.SetBool("IsMoving", true);
                 Debug.Log("Should be changing the bool");
             }
             else
             {
-                player.SetBool("IsMoving", false);
+                //player.SetBool("IsMoving", false);
                 horse.SetBool("IsMoving", false);
+                Debug.Log("Speed is " + speed);
             }
 
 
