@@ -146,12 +146,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //this is all my and my code to call the animation for moving
             if (m_moveInput.x != 0 || m_moveInput.y != 0)
             {
-                //player.SetBool("IsMoving", true);
+                player.SetBool("IsMoving", true);
                 horse.SetBool("IsMoving", true);
             }
             else
             {
-                //player.SetBool("IsMoving", false);
+                player.SetBool("IsMoving", false);
                 horse.SetBool("IsMoving", false);
             }
 

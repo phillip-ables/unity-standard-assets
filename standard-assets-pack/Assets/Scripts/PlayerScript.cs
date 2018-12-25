@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour {
     // Use this for initialization
     void Start() {
         money = 1000;
+        m_Animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
