@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad91f52bba2683a43a531ed4957cf61c
+guid: f835220ca4d9f0f4fb9732d23a661a17
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -22,9 +22,9 @@ ModelImporter:
     100032: Leg.L
     100034: Leg.R
     100036: Neck
-    100038: Rabbit_Mesh.front
-    100040: RabbitF
-    100042: //RootNode
+    100038: RabbitF
+    100040: //RootNode
+    100042: RabbitF_Mesh
     100044: Spine
     400000: Arm.L
     400002: Arm.R
@@ -45,26 +45,23 @@ ModelImporter:
     400032: Leg.L
     400034: Leg.R
     400036: Neck
-    400038: Rabbit_Mesh.front
-    400040: RabbitF
-    400042: //RootNode
+    400038: RabbitF
+    400040: //RootNode
+    400042: RabbitF_Mesh
     400044: Spine
     2100000: Bunny_Material
-    4300000: Rabbit_Mesh.front
-    7400000: RabbitF|@RabbitB_feat_Catch
-    7400002: RabbitF|@RabbitB_feat_Tie
-    7400004: RabbitF|@RabbitB_loc_BunnyHop.back
-    7400006: RabbitF|@RabbitF_feat_Catch
-    7400008: RabbitF|@RabbitF_feat_Tie
-    7400010: RabbitF|@RabbitF_loc_BunnyHop
+    4300000: RabbitF_Mesh
+    7400000: RabbitF|@RabbitB_feat_Tie
+    7400002: RabbitF|@RabbitB_loc_IdleBunny
+    7400004: RabbitF|extraBackRab
+    7400006: RabbitF|feat_Catch.001
+    7400008: RabbitF|feat_MissCatch
+    7400010: RabbitF|feat_Tie
+    7400012: RabbitF|loc_BunnyHop
+    7400014: RabbitF|loc_IdleBunny
     9500000: //RootNode
-    13700000: Rabbit_Mesh.front
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bunny_Material
-    second: {fileID: 2100000, guid: 65505939b335651469da303f27389939, type: 2}
+    13700000: RabbitF_Mesh
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
