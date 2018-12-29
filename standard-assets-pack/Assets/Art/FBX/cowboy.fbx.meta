@@ -136,7 +136,17 @@ ModelImporter:
     7400030: Cowboy|tran_Up
     9500000: //RootNode
     13700000: Cowboy_Mesh
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: dc0e8071bdf2898459c1376fd6f46f1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cowboy_Texture
+    second: {fileID: 2100000, guid: e31bf64e75fc26e45ba81705f8c87078, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
