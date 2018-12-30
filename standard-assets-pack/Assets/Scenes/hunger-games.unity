@@ -2391,10 +2391,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbcae6b91f0eac459fae7dc9ab05677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  money: 0
-  buildingPrefab: {fileID: 0}
-  fencePrefab: {fileID: 0}
+  scoreText: {fileID: 2082388516}
+  money: 1000
+  buildingPrefab: {fileID: 1475557956409310, guid: 687534883c017674b926bf1abd2353fd,
+    type: 2}
+  fencePrefab: {fileID: 1006061304326138, guid: 1ef0ca9dcacdf464aabc6292a84b3efc,
+    type: 2}
 --- !u!1001 &706386675
 Prefab:
   m_ObjectHideFlags: 0
