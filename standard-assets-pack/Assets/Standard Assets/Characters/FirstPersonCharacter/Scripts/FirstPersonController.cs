@@ -31,6 +31,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         [SerializeField] private Animator player;
         [SerializeField] private Animator horse;
+        private int cardDirInt;
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -68,6 +69,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
             horse = GameObject.FindGameObjectWithTag( "Stead" ).GetComponent<Animator>();
+
+            cardDirInt = 0;
         }
 
 
@@ -144,7 +147,43 @@ namespace UnityStandardAssets.Characters.FirstPerson
             UpdateCameraPosition(speed);
 
             //this is all my and my code to call the animation for moving
-            if (m_moveInput.x != 0 || m_moveInput.y != 0)
+            if (m_moveInput.x != 0 && m_moveInput.y != 0)
+            {
+                //if horizontal input is greater then vertical input
+                if (Math.Abs(m_moveInput.x) > Math.Abs(m_moveInput.y))
+                {
+                    //left = 3
+                    if (m_moveInput.x > 0)
+                    {
+                        Debug.Log("Left");
+                        cardDirInt = 3;
+                    }
+                    //right = 4
+                    else
+                    {
+                        cardDirInt = 4;
+                    }
+                }
+                else
+                {
+                    //forward = 1
+                    if (m_moveInput.y > 0)
+                    {
+                        cardDirInt = 1;
+                    }
+                    else
+                    {
+                        cardDirInt = 2;
+                    }
+                }
+            }
+            else
+            {
+                cardDirInt = 0;
+            }
+            player.SetInteger("CardDir", cardDirInt);
+            horse.SetInteger("CardDir", cardDirInt);
+                /*
             {
                 player.SetBool("IsMoving", true);
                 horse.SetBool("IsMoving", true);
@@ -154,6 +193,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 player.SetBool("IsMoving", false);
                 horse.SetBool("IsMoving", false);
             }
+            */
+
+            
 
 
             //c
